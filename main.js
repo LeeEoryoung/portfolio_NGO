@@ -6,6 +6,9 @@ $(function (){
     $('.mo_login_btn').click(function () {
         $('.modal_login, body').addClass('active')
     });
+    $('#popup_login_btn').click(function () {
+        alert("welcome WNC😄")
+    });
     $('.btn_close').click(function () {
         $('.modal_login, body').removeClass('active')
     });
@@ -54,6 +57,7 @@ $(function () {
         $('.mo_gnb').toggleClass('active')
     })
 });
+
 
 // mobile gnb
 $(window).resize(function () {
