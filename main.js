@@ -1,4 +1,5 @@
 // login modal
+
 $(function (){
     $('.login_btn').click(function () {
         $('.modal_login, body').addClass('active')
@@ -6,13 +7,13 @@ $(function (){
     $('.mo_login_btn').click(function () {
         $('.modal_login, body').addClass('active')
     });
-    $('#popup_login_btn').click(function () {
-        alert("welcome WNC😄")
-    });
     $('.btn_close').click(function () {
         $('.modal_login, body').removeClass('active')
     });
 });
+
+
+
 
 
 var mySwiper = new Swiper('.swiper-container', {
@@ -47,7 +48,13 @@ $('.btn_pause').click(function () {
         mySwiper.autoplay.start();
         sw = 0;
     }
-
+});
+// web gnb
+$(function(){
+    $(".gnb li > a").click(function(){
+        $(this).toggleClass('active');
+        $(".gnb li > a").not($(this)).removeClass("active");
+    });
 });
 
 // responsive trigger 
@@ -60,20 +67,9 @@ $(function () {
 
 
 // mobile gnb
-$(window).resize(function () {
-    if ($(window).width() < 768) {
-        let title = $('.mo_gnb>a'),
-            dropdown = $('.dropdown');
-
-        $(document).ready(function(){
-            title.click(function(){
-                title.removeClass('active');
-                $(this).addClass('active');
-                $(this).next().slideToggle();
-                $(this).next().siblings('div').slideUp();
-            });
-        });
-    }
+$(function(){
+    $(".mo_gnb > li > a").click(function(){
+        $(this).toggleClass('active');
+        $(".mo_gnb > li > a").not($(this)).removeClass("active");
+    });
 });
-
-

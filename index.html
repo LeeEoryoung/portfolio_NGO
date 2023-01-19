@@ -13,7 +13,9 @@
     <!-- fontawesome 6.2 cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <!-- main CSS -->
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="./main.css">
+    <!-- responsive css -->
+    <link rel="stylesheet" href="./responsive.css">
 
 </head>
 
@@ -61,36 +63,44 @@
                         <button class="login_btn">login</button>
                         <button class="donate_btn">donate to wnc</button>
                     </ul>
-                    <div class="mo_gnb">
-                        <a href="#none">home</a>
-                        <div class="dropdown">
-                            <a href="#none">about WNC</a>
-                            <a href="#none">WNC recruitment</a>
-                            <a href="#none">WNC volunteer recruitment</a>
-                        </div>
-                        <a href="#none">discover</a>
-                        <div class="dropdown">
-                            <a href="#none">forests</a>
-                            <a href="#none">oceans</a>
-                            <a href="#none">wild animals</a>
-                            <a href="#none">climate & energy</a>
-                            <a href="#none">food</a>
-                        </div>
-                        <a href="#none">act</a>
-                        <div class="dropdown">
-                            <a href="#none">donate to WNC</a>
-                            <a href="#none">take action</a>
-                            <a href="#none">partner with WWF</a>
-                        </div>
-                        <a href="#none">latest</a>
-                        <div class="dropdown">
-                            <a href="#none">latest updates</a>
-                            <a href="#none">press center</a>
-                            <a href="#none">success stories</a>
-                        </div>
+                    <ul class="mo_gnb">
+                        <li>
+                            <a href="#none">home</u>
+                            <ul class="mo_dropdown">
+                                <li><a href="#none">about WNC</a></li>
+                                <li><a href="#none">WNC recruitment</a></li>
+                                <li><a href="#none">WNC volunteer recruitment</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#none">discover</a>
+                            <ul class="mo_dropdown">
+                                <li><a href="#none">forests</a></li>
+                                <li><a href="#none">oceans</a></li>
+                                <li><a href="#none">wild animals</a></li>
+                                <li><a href="#none">climate & energy</a></li>
+                                <li><a href="#none">food</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#none">act</a>
+                            <ul class="mo_dropdown">
+                                <li><a href="#none">donate to WNC</a></li>
+                                <li><a href="#none">take action</a></li>
+                                <li><a href="#none">partner with WWF</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#none">latest</a>
+                            <ul class="mo_dropdown">
+                                <li><a href="#none">latest updates</a></li>
+                                <li> <a href="#none">press center</a></li>
+                                <li> <a href="#none">success stories</a></li>
+                            </ul>
+                        </li>
                         <button class="mo_login_btn">login</button>
                         <button class="mo_donate_btn">donate to wnc</button>
-                    </div>
+                    </ul>
                     <div class="trigger">
                         <span></span>
                         <span></span>
@@ -262,11 +272,13 @@
                 <i class="fa-solid fa-xmark"></i>
             </button>
             <h1>login</h1>
-            <input type="text" placeholder="Enter your Email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your Email'" />
-            <input type="password" placeholder="Enter your password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your password'" />
+            <input id="mail" type="text" placeholder="Enter your Email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your Email'" />
+            <div class="error" id="error_mail"></div>
+            <input id="pw" type="password" placeholder="Enter your password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your password'" />
+            <div class="error" id="error_pw"></div>
             <div class="save_info">
                 <label for="save"><input id="save" type="checkbox">save ID</label>
-                <a href="#none">Find ID | password</a>
+                <a href="#none">Find E-mail | password</a>
             </div>
             <div class="sign_up">
                 <input type="button" value="login" id="popup_login_btn">
@@ -277,7 +289,7 @@
                     <a href="#none"><i class="fa-brands fa-google"></i></a>
                 </p>
             </div>
-            <a class="btn_signin" href="#none">Not a member yet?</a>
+            <a class="btn_signin" href="./signup/signup.html">Not a member yet?</a>
         </div>
     </div>
 
@@ -287,7 +299,7 @@
     <!-- swiper js cdn-->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <!-- custom js -->
-    <script src="main.js"></script>
+    <script src="./main.js"></script>
 </body>
 
 </html>

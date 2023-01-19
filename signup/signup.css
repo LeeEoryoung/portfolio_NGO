@@ -101,4 +101,8 @@ hr {
     .wrapper {
         width: 80%;
     }
+    .footer #signup_btn {
+        width: 100%;
+        margin-left: 0;
+    }
 }
